@@ -8,4 +8,7 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 
+/css/
+!/css/style.less
+
 /user_guide/
