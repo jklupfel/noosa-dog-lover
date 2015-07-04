@@ -19,12 +19,14 @@ class Map extends CI_Controller {
 	 */
 	public function list_view()
 	{
-		$this->load->view('list');
+		$data['markers'] = $this->marker->get_markers();
+		$this->load->view('list', $data);
 	}
 	
 	public function map_view()
 	{
-		echo "test";
+		$data['markers'] = $this->marker->get_markers();
+		$this->load->view('map', $data);
 	}
 	
 	
